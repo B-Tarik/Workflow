@@ -1,0 +1,10 @@
+@import "normalize.css"; /* the name of the dependencie */
+@import "base/_variables.scss";
+@import "base/_global.scss";
+@import "base/_mixins.scss";
+@import "modules/_large-hero.scss";
+@import "modules/_btn.scss";
+@import "modules/_sprite.css";
+@import "modules/_modal.scss";
+
+

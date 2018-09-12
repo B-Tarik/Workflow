@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>1- Cropping situation:</h1>
+    <picture>
+        <source media="(min-width: 1200px)" srcset="img/large.jpg">
+        <source media="(min-width: 760px)" srcset="img/medium.jpg">
+        <img src="img/small.jpg" alt="nice image">
+    </picture>
+
+    <h1>2- Image resolution</h1>
+    <img    srcset="img/small.jpg w530px, 
+                    img/medium.jpg 760px, 
+                    img/large.jpg w1200px"
+            alt="nice image">
+    
+    <h1>3- Mix</h1>
+    <picture>
+        <source sizes="1200px" media="(min-width: 1200px)" srcset="img/large.jpg 1920w, img/large.jpg 3840w">
+        <source sizes="(min-width: 720px) 720px, 100vw" media="(min-width: 760px)" srcset="img/medium.jpg 1380w, img/medium.jpg w2760w">
+        <img srcset="img/small.jpg 640w, img/small.jpg 1280w" alt="nice image">
+    </picture>
+</body>
+</html>
